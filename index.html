@@ -1,37 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Josh S. Duiker — Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josh Duiker — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1 style="margin:0;">Josh S. Duiker</h1>
-    <p style="margin:4px 0 0 0;">Customer Success Enablement · Knowledge Management · SaaS Onboarding</p>
+  <header class="site-header">
+    <div class="container row spread center-v">
+      <a class="brand" href="#"><span class="logo">josh</span><span class="brand-text">Josh Duiker</span></a>
+      <nav class="nav">
+        <a href="#work">Work</a>
+        <a href="#article">Article</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/joshsamd/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
   </header>
 
-  <main style="max-width: 900px; margin: auto; padding: 24px;">
-    <section style="text-align:center;">
-      <img src="Josh D Headshot V2.png" alt="Josh S. Duiker headshot" style="width:180px;border-radius:50%;margin-bottom:16px;" />
-      <p>
-        <a href="https://drive.google.com/file/d/1KduLY4GA6KKvCckTAZrMgQy0BtSCzE0D/view?usp=drive_link" target="_blank" rel="noopener">Download Resume</a> |
-        <a href="https://www.linkedin.com/in/joshsamd/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
+  <main>
+    <!-- Hero -->
+    <section class="hero container row gap-xl center-v">
+      <div class="hero-copy">
+        <p class="eyebrow">Customer Enablement · Knowledge Management · Video Training</p>
+        <h1>Enablement that teaches, equips, and scales</h1>
+        <p class="lede">I build clear, scalable enablement that turns complex software into confident users.</p>
+        <div class="actions">
+          <a href="#article" class="btn primary">View article sample</a>
+          <a href="#work" class="btn ghost">See featured videos</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="Josh D Headshot V2.png" alt="Josh headshot">
+      </figure>
     </section>
 
-    <section>
-      <h2>Featured Work</h2>
-      <article style="margin-top:12px;">
-        <h3>Support Article Example</h3>
-        <img src="How to Add and Manage Users Support Article - Short.jpeg" alt="Support article screenshot" />
-      </article>
+    <!-- Featured videos -->
+    <section id="work" class="section container">
+      <div class="row spread center-v">
+        <h2>Featured videos</h2>
+        <a class="inline-cta" href="#contact">Need a specific sample? →</a>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <a class="thumb placeholder" href="https://vimeo.com" target="_blank" rel="noopener" aria-label="Open on Vimeo"></a>
+          <div class="card-body">
+            <h3>How to Use TurboPass in DealerCenter</h3>
+            <p>Step by step guide for integrating TurboPass into the deal workflow to verify income and employment.</p>
+            <p class="meta">Open on Vimeo</p>
+          </div>
+        </article>
+        <article class="card">
+          <a class="thumb placeholder" href="https://vimeo.com" target="_blank" rel="noopener" aria-label="Open on Vimeo"></a>
+          <div class="card-body">
+            <h3>How To Use AppraiseIQ: Inventory Appraisal Extension</h3>
+            <p>Walkthrough of the Chrome extension for evaluating vehicles using live market data or book values.</p>
+            <p class="meta">Open on Vimeo</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Support article sample -->
+    <section id="article" class="section container row gap-xl center-v">
+      <div class="col">
+        <h2>Support article sample</h2>
+        <p>Sample Zendesk Guide article. Clear structure, internal links, and embedded video support rapid comprehension.</p>
+        <ul class="ticks">
+          <li>Clear, scannable structure with headings and anchors</li>
+          <li>Embedded video and cross‑linking to related topics</li>
+          <li>Optimized for search and support deflection</li>
+        </ul>
+        <a class="btn" href="#contact">Request more samples</a>
+      </div>
+      <figure class="shot">
+        <img src="How to Add and Manage Users Support Article - Short.jpeg" alt="Support article screenshot">
+      </figure>
+    </section>
+
+    <!-- About and stats -->
+    <section id="about" class="section container">
+      <div class="grid stats">
+        <div class="stat card soft">
+          <h3>About Josh</h3>
+          <p>Over the past 11 years at Nowcom, I led the development of the customer education ecosystem for the DealerCenter SaaS platform. I produced support documentation, explainer videos, LMS curriculum, and job aids that serve more than one hundred thousand users. My work reduces support burden and increases product adoption by meeting users where they are.</p>
+        </div>
+        <div class="stat card pill">146+ Zendesk help articles and 100+ tutorial videos</div>
+        <div class="stat card pill">&gt;90% LMS course completion, 85%+ quiz averages</div>
+        <div class="stat card pill">Cross functional partner with Product, Engineering, Sales, and CS</div>
+      </div>
     </section>
   </main>
 
-  <footer style="text-align:center;padding:20px;background:#f4f4f4;margin-top:40px;">
-    <p>&copy; 2025 Josh S. Duiker</p>
+  <footer id="contact" class="site-footer">
+    <div class="container row spread center-v">
+      <p>© 2025 Josh Duiker</p>
+      <p><a href="mailto:joshuasduiker@gmail.com">joshuasduiker@gmail.com</a></p>
+    </div>
   </footer>
 </body>
 </html>
